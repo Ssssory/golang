@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: ./docker
+    container_name: go_app
+    volumes:
+      - ./app:/app
